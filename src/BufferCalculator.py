@@ -26,6 +26,11 @@ class  BufferCalculator(QMainWindow, Ui_MainWindow):
         self.bufferId = 0
         self.createMenu()
         self.Calculate.clicked.connect(self.DoCalculation)
+        self.totalBufferMolarityLineEdit.setText('0.00')
+        self.targetPHLineEdit.setText('7.00')
+        self.sodiumChlorideMolarityLineEdit.setText('0.00')
+        self.titrantEdit.setMaxLength(6)
+        self.bufferEdit.setMaxLength(6)
         self.setWindowTitle("Sup")
         self.pH = 0.0
         self.cond = 0.0
@@ -44,6 +49,7 @@ class  BufferCalculator(QMainWindow, Ui_MainWindow):
         self.asmw = 0.0
         self.aMol = 0.0
         self.pKa = 0.0
+        self.comboBox.currentTextChanged.connect(self.titrateCalculate())
 
     def SetBuffer(self):
         buffer = self.bufferTypeComboBox.currentText()
@@ -93,13 +99,14 @@ class  BufferCalculator(QMainWindow, Ui_MainWindow):
         if(self.comboBox.currentText() == "10N Sodium Hydroxide"):
             if(self.bufferId == 1):
                 self.titratename.setText("mL/L")
-            self.titrantEdit.setText("g/mL")
+            else:
+                self.titratename.setText("g/mL")
             self.titrantEdit.setText(str(self.aMol/10 *1000))
             
             self.bufferEdit.setText(str(self.totMol * self.hasmw))
             self.buffercomp.setText(self.haChoiceCombo.currentText())
         elif(self.comboBox.currentText() =="6N Hydrochloric Acid"):
-            self.titrantEdit.setText("g/mL")
+            self.titratename.setText("g/mL")
             self.titrantEdit.setText(str(self.haMol/6*1000))
             self.bufferEdit.setText(str(self.totMol * self.asmw))
             self.buffercomp.setText(self.aChoiceCombo.currentText())
@@ -109,13 +116,15 @@ class  BufferCalculator(QMainWindow, Ui_MainWindow):
         cursor = self.connection.cursor()
         mwe = cursor.execute("SELECT MW FROM Chemical WHERE Name = ?", (self.haChoiceCombo.currentText(),))
         (mw) = mwe.fetchall()[0]
+        self.hasmw = mw[0]
         if(self.bufferId==1):
             self.haResultBox.setText(str(1000*self.totMol/(10.0**(self.pH-self.pkaVar)+1.0)/mw[0]))
             self.haMol = float(self.haResultBox.text())/1000 * 17.4
-            self.hasmw = mw[0]
+            
         else:
             self.haResultBox.setText(str(mw[0]*self.totMol/(10.0**(self.pH-self.pkaVar)+1.0)))
-        self.titrateCalculate()
+            self.haMol = float(self.haResultBox.text())/self.hasmw
+        
         self.seriouslyFinish()
     def seriouslyFinish(self):
         cursor = self.connection.cursor()
@@ -124,6 +133,7 @@ class  BufferCalculator(QMainWindow, Ui_MainWindow):
         self.aResultBox.setText(str(mw[0]*(self.totMol-self.totMol/(10.0**(self.pH-self.pkaVar)+1.0))))
         self.aMol = float(self.aResultBox.text())/mw[0]
         self.asmw = mw[0]
+        self.titrateCalculate()
         self.solveConductivity()
     def solveConductivity(self):
         HA_1 = float(self.aResultBox.text())
