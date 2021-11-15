@@ -1,0 +1,13 @@
+altgraph==0.17.2
+future==0.18.2
+Jinja2==3.0.2
+MarkupSafe==2.0.1
+pefile==2021.9.3
+pyinstaller==4.6
+pyinstaller-hooks-contrib==2021.3
+PySide2==5.15.2
+pywin32-ctypes==0.2.0
+QDarkStyle==3.0.2
+qt-material==2.8.13
+QtPy==1.11.2
+shiboken2==5.15.2

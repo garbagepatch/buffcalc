@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>modulegraph cross reference for BufferCalculator.py, pyi_rth_multiprocessing.py, pyi_rth_pyside2.py</title>
+    <title>modulegraph cross reference for BufferCalculator.py, pyi_rth_inspect.py, pyi_rth_multiprocessing.py, pyi_rth_pkgutil.py, pyi_rth_pyside2.py</title>
     <style>
       .node { padding: 0.5em 0 0.5em; border-top: thin grey dotted; }
       .moduletype { font: smaller italic }
@@ -11,11 +11,11 @@
     </style>
   </head>
   <body>
-    <h1>modulegraph cross reference for BufferCalculator.py, pyi_rth_multiprocessing.py, pyi_rth_pyside2.py</h1>
+    <h1>modulegraph cross reference for BufferCalculator.py, pyi_rth_inspect.py, pyi_rth_multiprocessing.py, pyi_rth_pkgutil.py, pyi_rth_pyside2.py</h1>
 
 <div class="node">
   <a name="BufferCalculator.py"></a>
-  <a target="code" href="///C:/Users/cmedders/buffcalc/BufferCalculator.py" type="text/plain"><tt>BufferCalculator.py</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/src/BufferCalculator.py" type="text/plain"><tt>BufferCalculator.py</tt></a>
 <span class="moduletype">Script</span>  <div class="import">
 imports:
     <a href="#PySide2">PySide2</a>
@@ -163,7 +163,9 @@ imports:
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#operator">operator</a>
+ &#8226;   <a href="#pyi_rth_inspect.py">pyi_rth_inspect.py</a>
  &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
+ &#8226;   <a href="#pyi_rth_pkgutil.py">pyi_rth_pkgutil.py</a>
  &#8226;   <a href="#pyi_rth_pyside2.py">pyi_rth_pyside2.py</a>
  &#8226;   <a href="#qdarkstyle">qdarkstyle</a>
  &#8226;   <a href="#qt_material">qt_material</a>
@@ -184,8 +186,26 @@ imports:
 </div>
 
 <div class="node">
+  <a name="pyi_rth_inspect.py"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/Lib/site-packages/PyInstaller/hooks/rthooks/pyi_rth_inspect.py" type="text/plain"><tt>pyi_rth_inspect.py</tt></a>
+<span class="moduletype">Script</span>  <div class="import">
+imports:
+    <a href="#inspect">inspect</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#sys">sys</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#BufferCalculator.py">BufferCalculator.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="pyi_rth_multiprocessing.py"></a>
-  <a target="code" href="///C:/Users/cmedders/AppData/Local/Programs/Python/Python39/Lib/site-packages/PyInstaller/hooks/rthooks/pyi_rth_multiprocessing.py" type="text/plain"><tt>pyi_rth_multiprocessing.py</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/Lib/site-packages/PyInstaller/hooks/rthooks/pyi_rth_multiprocessing.py" type="text/plain"><tt>pyi_rth_multiprocessing.py</tt></a>
 <span class="moduletype">Script</span>  <div class="import">
 imports:
     <a href="#multiprocessing">multiprocessing</a>
@@ -194,7 +214,6 @@ imports:
  &#8226;   <a href="#multiprocessing.popen_spawn_win32">multiprocessing.popen_spawn_win32</a>
  &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
  &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#subprocess">subprocess</a>
  &#8226;   <a href="#sys">sys</a>
 
@@ -208,8 +227,27 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="pyi_rth_pkgutil.py"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/Lib/site-packages/PyInstaller/hooks/rthooks/pyi_rth_pkgutil.py" type="text/plain"><tt>pyi_rth_pkgutil.py</tt></a>
+<span class="moduletype">Script</span>  <div class="import">
+imports:
+    <a href="#os">os</a>
+ &#8226;   <a href="#pkgutil">pkgutil</a>
+ &#8226;   <a href="#pyimod03_importers">pyimod03_importers</a>
+ &#8226;   <a href="#sys">sys</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#BufferCalculator.py">BufferCalculator.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="pyi_rth_pyside2.py"></a>
-  <a target="code" href="///C:/Users/cmedders/AppData/Local/Programs/Python/Python39/Lib/site-packages/PyInstaller/hooks/rthooks/pyi_rth_pyside2.py" type="text/plain"><tt>pyi_rth_pyside2.py</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/Lib/site-packages/PyInstaller/hooks/rthooks/pyi_rth_pyside2.py" type="text/plain"><tt>pyi_rth_pyside2.py</tt></a>
 <span class="moduletype">Script</span>  <div class="import">
 imports:
     <a href="#os">os</a>
@@ -265,7 +303,8 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>'PyQt5.QtCore'</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#qtpy">qtpy</a>
+    <a href="#qt_material">qt_material</a>
+ &#8226;   <a href="#qtpy">qtpy</a>
  &#8226;   <a href="#qtpy.QtCore">qtpy.QtCore</a>
 
   </div>
@@ -288,7 +327,19 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>'PyQt5.QtGui'</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#qtpy.QtGui">qtpy.QtGui</a>
+    <a href="#qt_material">qt_material</a>
+ &#8226;   <a href="#qtpy.QtGui">qtpy.QtGui</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="'PyQt5.QtWidgets'"></a>
+  <a target="code" href="" type="text/plain"><tt>'PyQt5.QtWidgets'</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#qt_material">qt_material</a>
 
   </div>
 
@@ -319,6 +370,39 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="'PySide6.QtCore'"></a>
+  <a target="code" href="" type="text/plain"><tt>'PySide6.QtCore'</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#qt_material">qt_material</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="'PySide6.QtUiTools'"></a>
+  <a target="code" href="" type="text/plain"><tt>'PySide6.QtUiTools'</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#qt_material">qt_material</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="'PySide6.QtWidgets'"></a>
+  <a target="code" href="" type="text/plain"><tt>'PySide6.QtWidgets'</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#qt_material">qt_material</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="'java.lang'"></a>
   <a target="code" href="" type="text/plain"><tt>'java.lang'</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
@@ -335,7 +419,7 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>'org.python'</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#pickle">pickle</a>
+    <a href="#copy">copy</a>
  &#8226;   <a href="#xml.sax">xml.sax</a>
 
   </div>
@@ -380,7 +464,8 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>PyQt5</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#qtpy">qtpy</a>
+    <a href="#qt_material">qt_material</a>
+ &#8226;   <a href="#qtpy">qtpy</a>
 
   </div>
 
@@ -399,7 +484,7 @@ imported by:
 
 <div class="node">
   <a name="PySide2"></a>
-  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/site-packages/PySide2/__init__.py" type="text/plain"><tt>PySide2</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/PySide2/__init__.py" type="text/plain"><tt>PySide2</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
 imports:
     <a href="#PySide2">PySide2</a>
@@ -420,7 +505,9 @@ imported by:
  &#8226;   <a href="#PySide2.QtGui">PySide2.QtGui</a>
  &#8226;   <a href="#PySide2.QtNetwork">PySide2.QtNetwork</a>
  &#8226;   <a href="#PySide2.QtSql">PySide2.QtSql</a>
+ &#8226;   <a href="#PySide2.QtUiTools">PySide2.QtUiTools</a>
  &#8226;   <a href="#PySide2.QtWidgets">PySide2.QtWidgets</a>
+ &#8226;   <a href="#PySide2.QtXml">PySide2.QtXml</a>
  &#8226;   <a href="#data.connection">data.connection</a>
  &#8226;   <a href="#qtpy">qtpy</a>
 
@@ -430,7 +517,7 @@ imported by:
 
 <div class="node">
   <a name="PySide2.QtCore"></a>
-  <tt>PySide2.QtCore</tt> <span class="moduletype"><tt>c:\users\cmedders\appdata\local\programs\python\python39\lib\site-packages\PySide2\QtCore.pyd</tt></span>  <div class="import">
+  <tt>PySide2.QtCore</tt> <span class="moduletype"><tt>C:\Users\cmedders\buffcalc\env\lib\site-packages\PySide2\QtCore.pyd</tt></span>  <div class="import">
 imports:
     <a href="#PySide2">PySide2</a>
  &#8226;   <a href="#PySide2.QtCore">PySide2.QtCore</a>
@@ -443,8 +530,11 @@ imported by:
  &#8226;   <a href="#PySide2.QtGui">PySide2.QtGui</a>
  &#8226;   <a href="#PySide2.QtNetwork">PySide2.QtNetwork</a>
  &#8226;   <a href="#PySide2.QtSql">PySide2.QtSql</a>
+ &#8226;   <a href="#PySide2.QtUiTools">PySide2.QtUiTools</a>
  &#8226;   <a href="#PySide2.QtWidgets">PySide2.QtWidgets</a>
+ &#8226;   <a href="#PySide2.QtXml">PySide2.QtXml</a>
  &#8226;   <a href="#data.connection">data.connection</a>
+ &#8226;   <a href="#qt_material">qt_material</a>
  &#8226;   <a href="#qtpy">qtpy</a>
  &#8226;   <a href="#qtpy.QtCore">qtpy.QtCore</a>
  &#8226;   <a href="#ui.calculator">ui.calculator</a>
@@ -455,7 +545,7 @@ imported by:
 
 <div class="node">
   <a name="PySide2.QtDataVisualization"></a>
-  <tt>PySide2.QtDataVisualization</tt> <span class="moduletype"><tt>c:\users\cmedders\appdata\local\programs\python\python39\lib\site-packages\PySide2\QtDataVisualization.pyd</tt></span>  <div class="import">
+  <tt>PySide2.QtDataVisualization</tt> <span class="moduletype"><tt>C:\Users\cmedders\buffcalc\env\lib\site-packages\PySide2\QtDataVisualization.pyd</tt></span>  <div class="import">
 imports:
     <a href="#PySide2">PySide2</a>
 
@@ -470,7 +560,7 @@ imported by:
 
 <div class="node">
   <a name="PySide2.QtGui"></a>
-  <tt>PySide2.QtGui</tt> <span class="moduletype"><tt>c:\users\cmedders\appdata\local\programs\python\python39\lib\site-packages\PySide2\QtGui.pyd</tt></span>  <div class="import">
+  <tt>PySide2.QtGui</tt> <span class="moduletype"><tt>C:\Users\cmedders\buffcalc\env\lib\site-packages\PySide2\QtGui.pyd</tt></span>  <div class="import">
 imports:
     <a href="#PySide2">PySide2</a>
  &#8226;   <a href="#PySide2.QtCore">PySide2.QtCore</a>
@@ -482,8 +572,10 @@ imported by:
     <a href="#BufferCalculator.py">BufferCalculator.py</a>
  &#8226;   <a href="#PySide2.QtGui">PySide2.QtGui</a>
  &#8226;   <a href="#PySide2.QtSql">PySide2.QtSql</a>
+ &#8226;   <a href="#PySide2.QtUiTools">PySide2.QtUiTools</a>
  &#8226;   <a href="#PySide2.QtWidgets">PySide2.QtWidgets</a>
  &#8226;   <a href="#data.connection">data.connection</a>
+ &#8226;   <a href="#qt_material">qt_material</a>
  &#8226;   <a href="#qtpy.QtCore">qtpy.QtCore</a>
  &#8226;   <a href="#qtpy.QtGui">qtpy.QtGui</a>
  &#8226;   <a href="#ui.calculator">ui.calculator</a>
@@ -494,7 +586,7 @@ imported by:
 
 <div class="node">
   <a name="PySide2.QtNetwork"></a>
-  <tt>PySide2.QtNetwork</tt> <span class="moduletype"><tt>c:\users\cmedders\appdata\local\programs\python\python39\lib\site-packages\PySide2\QtNetwork.pyd</tt></span>  <div class="import">
+  <tt>PySide2.QtNetwork</tt> <span class="moduletype"><tt>C:\Users\cmedders\buffcalc\env\lib\site-packages\PySide2\QtNetwork.pyd</tt></span>  <div class="import">
 imports:
     <a href="#PySide2">PySide2</a>
  &#8226;   <a href="#PySide2.QtCore">PySide2.QtCore</a>
@@ -512,7 +604,7 @@ imported by:
 
 <div class="node">
   <a name="PySide2.QtSql"></a>
-  <tt>PySide2.QtSql</tt> <span class="moduletype"><tt>c:\users\cmedders\appdata\local\programs\python\python39\lib\site-packages\PySide2\QtSql.pyd</tt></span>  <div class="import">
+  <tt>PySide2.QtSql</tt> <span class="moduletype"><tt>C:\Users\cmedders\buffcalc\env\lib\site-packages\PySide2\QtSql.pyd</tt></span>  <div class="import">
 imports:
     <a href="#PySide2">PySide2</a>
  &#8226;   <a href="#PySide2.QtCore">PySide2.QtCore</a>
@@ -532,8 +624,27 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="PySide2.QtUiTools"></a>
+  <tt>PySide2.QtUiTools</tt> <span class="moduletype"><tt>C:\Users\cmedders\buffcalc\env\lib\site-packages\PySide2\QtUiTools.pyd</tt></span>  <div class="import">
+imports:
+    <a href="#PySide2">PySide2</a>
+ &#8226;   <a href="#PySide2.QtCore">PySide2.QtCore</a>
+ &#8226;   <a href="#PySide2.QtGui">PySide2.QtGui</a>
+ &#8226;   <a href="#PySide2.QtWidgets">PySide2.QtWidgets</a>
+ &#8226;   <a href="#PySide2.QtXml">PySide2.QtXml</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#qt_material">qt_material</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="PySide2.QtWidgets"></a>
-  <tt>PySide2.QtWidgets</tt> <span class="moduletype"><tt>c:\users\cmedders\appdata\local\programs\python\python39\lib\site-packages\PySide2\QtWidgets.pyd</tt></span>  <div class="import">
+  <tt>PySide2.QtWidgets</tt> <span class="moduletype"><tt>C:\Users\cmedders\buffcalc\env\lib\site-packages\PySide2\QtWidgets.pyd</tt></span>  <div class="import">
 imports:
     <a href="#PySide2">PySide2</a>
  &#8226;   <a href="#PySide2.QtCore">PySide2.QtCore</a>
@@ -545,8 +656,40 @@ imports:
 imported by:
     <a href="#BufferCalculator.py">BufferCalculator.py</a>
  &#8226;   <a href="#PySide2.QtSql">PySide2.QtSql</a>
+ &#8226;   <a href="#PySide2.QtUiTools">PySide2.QtUiTools</a>
  &#8226;   <a href="#PySide2.QtWidgets">PySide2.QtWidgets</a>
+ &#8226;   <a href="#data.connection">data.connection</a>
+ &#8226;   <a href="#qt_material">qt_material</a>
  &#8226;   <a href="#ui.calculator">ui.calculator</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PySide2.QtXml"></a>
+  <tt>PySide2.QtXml</tt> <span class="moduletype"><tt>C:\Users\cmedders\buffcalc\env\lib\site-packages\PySide2\QtXml.pyd</tt></span>  <div class="import">
+imports:
+    <a href="#PySide2">PySide2</a>
+ &#8226;   <a href="#PySide2.QtCore">PySide2.QtCore</a>
+ &#8226;   <a href="#PySide2.QtXml">PySide2.QtXml</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PySide2.QtUiTools">PySide2.QtUiTools</a>
+ &#8226;   <a href="#PySide2.QtXml">PySide2.QtXml</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PySide6"></a>
+  <a target="code" href="" type="text/plain"><tt>PySide6</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#qt_material">qt_material</a>
 
   </div>
 
@@ -1035,6 +1178,23 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="_json"></a>
+  <tt>_json</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
+imports:
+    <a href="#json.decoder">json.decoder</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#json.decoder">json.decoder</a>
+ &#8226;   <a href="#json.encoder">json.encoder</a>
+ &#8226;   <a href="#json.scanner">json.scanner</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="_locale"></a>
   <tt>_locale</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
@@ -1410,7 +1570,8 @@ imported by:
   <a name="_string"></a>
   <tt>_string</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#string">string</a>
+    <a href="#jinja2.sandbox">jinja2.sandbox</a>
+ &#8226;   <a href="#string">string</a>
 
   </div>
 
@@ -1666,6 +1827,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#inspect">inspect</a>
+ &#8226;   <a href="#jinja2.lexer">jinja2.lexer</a>
 
   </div>
 
@@ -1739,6 +1901,7 @@ imported by:
  &#8226;   <a href="#asyncio.unix_events">asyncio.unix_events</a>
  &#8226;   <a href="#asyncio.windows_events">asyncio.windows_events</a>
  &#8226;   <a href="#asyncio.windows_utils">asyncio.windows_utils</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
  &#8226;   <a href="#unittest.async_case">unittest.async_case</a>
 
   </div>
@@ -2561,6 +2724,7 @@ imported by:
  &#8226;   <a href="#email.encoders">email.encoders</a>
  &#8226;   <a href="#encodings.base64_codec">encodings.base64_codec</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#qt_material">qt_material</a>
  &#8226;   <a href="#secrets">secrets</a>
  &#8226;   <a href="#shiboken2">shiboken2</a>
  &#8226;   <a href="#ssl">ssl</a>
@@ -2913,6 +3077,7 @@ imported by:
  &#8226;   <a href="#encodings.utf_8_sig">encodings.utf_8_sig</a>
  &#8226;   <a href="#encodings.uu_codec">encodings.uu_codec</a>
  &#8226;   <a href="#encodings.zlib_codec">encodings.zlib_codec</a>
+ &#8226;   <a href="#json">json</a>
  &#8226;   <a href="#lib2to3.pgen2.tokenize">lib2to3.pgen2.tokenize</a>
  &#8226;   <a href="#pickle">pickle</a>
  &#8226;   <a href="#plistlib">plistlib</a>
@@ -2984,6 +3149,15 @@ imported by:
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.lexer">jinja2.lexer</a>
+ &#8226;   <a href="#jinja2.loaders">jinja2.loaders</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.sandbox">jinja2.sandbox</a>
+ &#8226;   <a href="#jinja2.tests">jinja2.tests</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
  &#8226;   <a href="#lib2to3.btm_matcher">lib2to3.btm_matcher</a>
  &#8226;   <a href="#lib2to3.refactor">lib2to3.refactor</a>
  &#8226;   <a href="#multiprocessing.heap">multiprocessing.heap</a>
@@ -3057,6 +3231,12 @@ imported by:
  &#8226;   <a href="#configparser">configparser</a>
  &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.loaders">jinja2.loaders</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.sandbox">jinja2.sandbox</a>
+ &#8226;   <a href="#jinja2.tests">jinja2.tests</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#qtpy.py3compat">qtpy.py3compat</a>
  &#8226;   <a href="#selectors">selectors</a>
@@ -3228,6 +3408,7 @@ imported by:
  &#8226;   <a href="#http.server">http.server</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
+ &#8226;   <a href="#jinja2.compiler">jinja2.compiler</a>
  &#8226;   <a href="#shiboken2">shiboken2</a>
  &#8226;   <a href="#subprocess">subprocess</a>
  &#8226;   <a href="#test.support">test.support</a>
@@ -3266,8 +3447,8 @@ imported by:
   <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/copy.py" type="text/plain"><tt>copy</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#copyreg">copyreg</a>
- &#8226;   <a href="#org">org</a>
+    <a href="#'org.python'">'org.python'</a>
+ &#8226;   <a href="#copyreg">copyreg</a>
  &#8226;   <a href="#types">types</a>
  &#8226;   <a href="#weakref">weakref</a>
 
@@ -3357,6 +3538,7 @@ imported by:
  &#8226;   <a href="#ctypes.macholib">ctypes.macholib</a>
  &#8226;   <a href="#ctypes.util">ctypes.util</a>
  &#8226;   <a href="#ctypes.wintypes">ctypes.wintypes</a>
+ &#8226;   <a href="#jinja2.debug">jinja2.debug</a>
  &#8226;   <a href="#multiprocessing.sharedctypes">multiprocessing.sharedctypes</a>
  &#8226;   <a href="#test.support">test.support</a>
 
@@ -3394,13 +3576,14 @@ imported by:
 
 <div class="node">
   <a name="data.connection"></a>
-  <a target="code" href="///C:/Users/cmedders/buffcalc/data/connection.py" type="text/plain"><tt>data.connection</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/src/data/connection.py" type="text/plain"><tt>data.connection</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#PySide2">PySide2</a>
  &#8226;   <a href="#PySide2.QtCore">PySide2.QtCore</a>
  &#8226;   <a href="#PySide2.QtGui">PySide2.QtGui</a>
  &#8226;   <a href="#PySide2.QtSql">PySide2.QtSql</a>
+ &#8226;   <a href="#PySide2.QtWidgets">PySide2.QtWidgets</a>
  &#8226;   <a href="#data">data</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#sqlite3">sqlite3</a>
@@ -6897,6 +7080,7 @@ imported by:
  &#8226;   <a href="#asyncio.constants">asyncio.constants</a>
  &#8226;   <a href="#http">http</a>
  &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
  &#8226;   <a href="#plistlib">plistlib</a>
  &#8226;   <a href="#py_compile">py_compile</a>
  &#8226;   <a href="#re">re</a>
@@ -6920,6 +7104,8 @@ imported by:
  &#8226;   <a href="#distutils.file_util">distutils.file_util</a>
  &#8226;   <a href="#gettext">gettext</a>
  &#8226;   <a href="#gzip">gzip</a>
+ &#8226;   <a href="#http.client">http.client</a>
+ &#8226;   <a href="#jinja2.bccache">jinja2.bccache</a>
  &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
  &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
  &#8226;   <a href="#multiprocessing.shared_memory">multiprocessing.shared_memory</a>
@@ -6953,6 +7139,7 @@ imported by:
     <a href="#bdb">bdb</a>
  &#8226;   <a href="#distutils.filelist">distutils.filelist</a>
  &#8226;   <a href="#glob">glob</a>
+ &#8226;   <a href="#jinja2.bccache">jinja2.bccache</a>
  &#8226;   <a href="#pathlib">pathlib</a>
  &#8226;   <a href="#shutil">shutil</a>
  &#8226;   <a href="#test.support">test.support</a>
@@ -7041,8 +7228,13 @@ imported by:
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
  &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#jinja2.async_utils">jinja2.async_utils</a>
+ &#8226;   <a href="#jinja2.compiler">jinja2.compiler</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
+ &#8226;   <a href="#markupsafe">markupsafe</a>
  &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
  &#8226;   <a href="#multiprocessing.shared_memory">multiprocessing.shared_memory</a>
  &#8226;   <a href="#operator">operator</a>
@@ -7171,6 +7363,7 @@ imports:
 imported by:
     <a href="#argparse">argparse</a>
  &#8226;   <a href="#getopt">getopt</a>
+ &#8226;   <a href="#jinja2.ext">jinja2.ext</a>
  &#8226;   <a href="#optparse">optparse</a>
 
   </div>
@@ -7259,6 +7452,8 @@ imports:
   <div class="import">
 imported by:
     <a href="#hmac">hmac</a>
+ &#8226;   <a href="#jinja2.bccache">jinja2.bccache</a>
+ &#8226;   <a href="#jinja2.loaders">jinja2.loaders</a>
  &#8226;   <a href="#random">random</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
 
@@ -7320,6 +7515,7 @@ imports:
 imported by:
     <a href="#html.entities">html.entities</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#markupsafe">markupsafe</a>
 
   </div>
 
@@ -7367,6 +7563,7 @@ imports:
     <a href="#collections.abc">collections.abc</a>
  &#8226;   <a href="#email.message">email.message</a>
  &#8226;   <a href="#email.parser">email.parser</a>
+ &#8226;   <a href="#errno">errno</a>
  &#8226;   <a href="#http">http</a>
  &#8226;   <a href="#io">io</a>
  &#8226;   <a href="#re">re</a>
@@ -7468,6 +7665,7 @@ imports:
  &#8226;   <a href="#importlib._bootstrap">importlib._bootstrap</a>
  &#8226;   <a href="#importlib._bootstrap_external">importlib._bootstrap_external</a>
  &#8226;   <a href="#importlib.abc">importlib.abc</a>
+ &#8226;   <a href="#importlib.machinery">importlib.machinery</a>
  &#8226;   <a href="#sys">sys</a>
  &#8226;   <a href="#types">types</a>
  &#8226;   <a href="#warnings">warnings</a>
@@ -7483,6 +7681,7 @@ imported by:
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
  &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#jinja2.loaders">jinja2.loaders</a>
  &#8226;   <a href="#pkgutil">pkgutil</a>
  &#8226;   <a href="#test.support">test.support</a>
 
@@ -7583,6 +7782,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#ctypes.util">ctypes.util</a>
+ &#8226;   <a href="#importlib">importlib</a>
  &#8226;   <a href="#importlib.abc">importlib.abc</a>
  &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#pkgutil">pkgutil</a>
@@ -7648,6 +7848,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#distutils.util">distutils.util</a>
+ &#8226;   <a href="#jinja2.loaders">jinja2.loaders</a>
  &#8226;   <a href="#pkgutil">pkgutil</a>
  &#8226;   <a href="#py_compile">py_compile</a>
  &#8226;   <a href="#pydoc">pydoc</a>
@@ -7695,9 +7896,12 @@ imported by:
  &#8226;   <a href="#asyncio.tasks">asyncio.tasks</a>
  &#8226;   <a href="#bdb">bdb</a>
  &#8226;   <a href="#doctest">doctest</a>
+ &#8226;   <a href="#jinja2.async_utils">jinja2.async_utils</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
  &#8226;   <a href="#pdb">pdb</a>
  &#8226;   <a href="#pkgutil">pkgutil</a>
  &#8226;   <a href="#pydoc">pydoc</a>
+ &#8226;   <a href="#pyi_rth_inspect.py">pyi_rth_inspect.py</a>
  &#8226;   <a href="#qtpy.QtDataVisualization">qtpy.QtDataVisualization</a>
  &#8226;   <a href="#unittest.async_case">unittest.async_case</a>
 
@@ -7739,6 +7943,8 @@ imported by:
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#http.server">http.server</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
+ &#8226;   <a href="#jinja2.bccache">jinja2.bccache</a>
+ &#8226;   <a href="#jinja2.compiler">jinja2.compiler</a>
  &#8226;   <a href="#lib2to3.patcomp">lib2to3.patcomp</a>
  &#8226;   <a href="#lib2to3.pgen2.driver">lib2to3.pgen2.driver</a>
  &#8226;   <a href="#lib2to3.pytree">lib2to3.pytree</a>
@@ -7800,6 +8006,9 @@ imported by:
  &#8226;   <a href="#fnmatch">fnmatch</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#jinja2.compiler">jinja2.compiler</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
  &#8226;   <a href="#lib2to3.btm_matcher">lib2to3.btm_matcher</a>
  &#8226;   <a href="#lib2to3.refactor">lib2to3.refactor</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
@@ -7835,12 +8044,767 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="jinja2"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/__init__.py" type="text/plain"><tt>jinja2</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.bccache">jinja2.bccache</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.exceptions">jinja2.exceptions</a>
+ &#8226;   <a href="#jinja2.ext">jinja2.ext</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.loaders">jinja2.loaders</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2._identifier">jinja2._identifier</a>
+ &#8226;   <a href="#jinja2.async_utils">jinja2.async_utils</a>
+ &#8226;   <a href="#jinja2.bccache">jinja2.bccache</a>
+ &#8226;   <a href="#jinja2.compiler">jinja2.compiler</a>
+ &#8226;   <a href="#jinja2.constants">jinja2.constants</a>
+ &#8226;   <a href="#jinja2.debug">jinja2.debug</a>
+ &#8226;   <a href="#jinja2.defaults">jinja2.defaults</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.exceptions">jinja2.exceptions</a>
+ &#8226;   <a href="#jinja2.ext">jinja2.ext</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.idtracking">jinja2.idtracking</a>
+ &#8226;   <a href="#jinja2.lexer">jinja2.lexer</a>
+ &#8226;   <a href="#jinja2.loaders">jinja2.loaders</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#jinja2.optimizer">jinja2.optimizer</a>
+ &#8226;   <a href="#jinja2.parser">jinja2.parser</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.sandbox">jinja2.sandbox</a>
+ &#8226;   <a href="#jinja2.tests">jinja2.tests</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#jinja2.visitor">jinja2.visitor</a>
+ &#8226;   <a href="#qt_material">qt_material</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2._identifier"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/_identifier.py" type="text/plain"><tt>jinja2._identifier</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#re">re</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2.lexer">jinja2.lexer</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.async_utils"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/async_utils.py" type="text/plain"><tt>jinja2.async_utils</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#functools">functools</a>
+ &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.bccache"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/bccache.py" type="text/plain"><tt>jinja2.bccache</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#errno">errno</a>
+ &#8226;   <a href="#fnmatch">fnmatch</a>
+ &#8226;   <a href="#hashlib">hashlib</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#marshal">marshal</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#pickle">pickle</a>
+ &#8226;   <a href="#stat">stat</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#tempfile">tempfile</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#typing_extensions">typing_extensions</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.compiler"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/compiler.py" type="text/plain"><tt>jinja2.compiler</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#contextlib">contextlib</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.exceptions">jinja2.exceptions</a>
+ &#8226;   <a href="#jinja2.idtracking">jinja2.idtracking</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#jinja2.optimizer">jinja2.optimizer</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#jinja2.visitor">jinja2.visitor</a>
+ &#8226;   <a href="#keyword">keyword</a>
+ &#8226;   <a href="#markupsafe">markupsafe</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#typing_extensions">typing_extensions</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.constants"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/constants.py" type="text/plain"><tt>jinja2.constants</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#jinja2">jinja2</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2.utils">jinja2.utils</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.debug"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/debug.py" type="text/plain"><tt>jinja2.debug</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#ctypes">ctypes</a>
+ &#8226;   <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.exceptions">jinja2.exceptions</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#platform">platform</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#tputil">tputil</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2.environment">jinja2.environment</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.defaults"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/defaults.py" type="text/plain"><tt>jinja2.defaults</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.tests">jinja2.tests</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#typing_extensions">typing_extensions</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.ext">jinja2.ext</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.environment"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/environment.py" type="text/plain"><tt>jinja2.environment</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#asyncio">asyncio</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.bccache">jinja2.bccache</a>
+ &#8226;   <a href="#jinja2.compiler">jinja2.compiler</a>
+ &#8226;   <a href="#jinja2.debug">jinja2.debug</a>
+ &#8226;   <a href="#jinja2.defaults">jinja2.defaults</a>
+ &#8226;   <a href="#jinja2.exceptions">jinja2.exceptions</a>
+ &#8226;   <a href="#jinja2.ext">jinja2.ext</a>
+ &#8226;   <a href="#jinja2.lexer">jinja2.lexer</a>
+ &#8226;   <a href="#jinja2.loaders">jinja2.loaders</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#jinja2.parser">jinja2.parser</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#markupsafe">markupsafe</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#typing_extensions">typing_extensions</a>
+ &#8226;   <a href="#weakref">weakref</a>
+ &#8226;   <a href="#zipfile">zipfile</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.bccache">jinja2.bccache</a>
+ &#8226;   <a href="#jinja2.compiler">jinja2.compiler</a>
+ &#8226;   <a href="#jinja2.ext">jinja2.ext</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.lexer">jinja2.lexer</a>
+ &#8226;   <a href="#jinja2.loaders">jinja2.loaders</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#jinja2.optimizer">jinja2.optimizer</a>
+ &#8226;   <a href="#jinja2.parser">jinja2.parser</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.sandbox">jinja2.sandbox</a>
+ &#8226;   <a href="#jinja2.tests">jinja2.tests</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.exceptions"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/exceptions.py" type="text/plain"><tt>jinja2.exceptions</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.compiler">jinja2.compiler</a>
+ &#8226;   <a href="#jinja2.debug">jinja2.debug</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.ext">jinja2.ext</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.lexer">jinja2.lexer</a>
+ &#8226;   <a href="#jinja2.loaders">jinja2.loaders</a>
+ &#8226;   <a href="#jinja2.parser">jinja2.parser</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.sandbox">jinja2.sandbox</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.ext"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/ext.py" type="text/plain"><tt>jinja2.ext</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#gettext">gettext</a>
+ &#8226;   <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.defaults">jinja2.defaults</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.exceptions">jinja2.exceptions</a>
+ &#8226;   <a href="#jinja2.lexer">jinja2.lexer</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#jinja2.parser">jinja2.parser</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#markupsafe">markupsafe</a>
+ &#8226;   <a href="#pprint">pprint</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#typing_extensions">typing_extensions</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.filters"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/filters.py" type="text/plain"><tt>jinja2.filters</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#collections">collections</a>
+ &#8226;   <a href="#collections.abc">collections.abc</a>
+ &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.async_utils">jinja2.async_utils</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.exceptions">jinja2.exceptions</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.sandbox">jinja2.sandbox</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#markupsafe">markupsafe</a>
+ &#8226;   <a href="#math">math</a>
+ &#8226;   <a href="#random">random</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#textwrap">textwrap</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#typing_extensions">typing_extensions</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.defaults">jinja2.defaults</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.idtracking"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/idtracking.py" type="text/plain"><tt>jinja2.idtracking</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#jinja2.visitor">jinja2.visitor</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2.compiler">jinja2.compiler</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.lexer"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/lexer.py" type="text/plain"><tt>jinja2.lexer</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#ast">ast</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2._identifier">jinja2._identifier</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.exceptions">jinja2.exceptions</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#typing_extensions">typing_extensions</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.ext">jinja2.ext</a>
+ &#8226;   <a href="#jinja2.parser">jinja2.parser</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.loaders"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/loaders.py" type="text/plain"><tt>jinja2.loaders</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#collections">collections</a>
+ &#8226;   <a href="#collections.abc">collections.abc</a>
+ &#8226;   <a href="#hashlib">hashlib</a>
+ &#8226;   <a href="#importlib">importlib</a>
+ &#8226;   <a href="#importlib.util">importlib.util</a>
+ &#8226;   <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.exceptions">jinja2.exceptions</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#weakref">weakref</a>
+ &#8226;   <a href="#zipimport">zipimport</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.nodes"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/nodes.py" type="text/plain"><tt>jinja2.nodes</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#collections">collections</a>
+ &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.compiler">jinja2.compiler</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#markupsafe">markupsafe</a>
+ &#8226;   <a href="#operator">operator</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#typing_extensions">typing_extensions</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.compiler">jinja2.compiler</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.ext">jinja2.ext</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.idtracking">jinja2.idtracking</a>
+ &#8226;   <a href="#jinja2.optimizer">jinja2.optimizer</a>
+ &#8226;   <a href="#jinja2.parser">jinja2.parser</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.visitor">jinja2.visitor</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.optimizer"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/optimizer.py" type="text/plain"><tt>jinja2.optimizer</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#jinja2.visitor">jinja2.visitor</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2.compiler">jinja2.compiler</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.parser"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/parser.py" type="text/plain"><tt>jinja2.parser</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.exceptions">jinja2.exceptions</a>
+ &#8226;   <a href="#jinja2.lexer">jinja2.lexer</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#typing_extensions">typing_extensions</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.ext">jinja2.ext</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.runtime"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/runtime.py" type="text/plain"><tt>jinja2.runtime</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#collections">collections</a>
+ &#8226;   <a href="#collections.abc">collections.abc</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.async_utils">jinja2.async_utils</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.exceptions">jinja2.exceptions</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#markupsafe">markupsafe</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#typing_extensions">typing_extensions</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.compiler">jinja2.compiler</a>
+ &#8226;   <a href="#jinja2.debug">jinja2.debug</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.exceptions">jinja2.exceptions</a>
+ &#8226;   <a href="#jinja2.ext">jinja2.ext</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.sandbox">jinja2.sandbox</a>
+ &#8226;   <a href="#jinja2.tests">jinja2.tests</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.sandbox"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/sandbox.py" type="text/plain"><tt>jinja2.sandbox</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#_string">_string</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#collections.abc">collections.abc</a>
+ &#8226;   <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.exceptions">jinja2.exceptions</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#markupsafe">markupsafe</a>
+ &#8226;   <a href="#operator">operator</a>
+ &#8226;   <a href="#string">string</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2.filters">jinja2.filters</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.tests"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/tests.py" type="text/plain"><tt>jinja2.tests</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#collections">collections</a>
+ &#8226;   <a href="#collections.abc">collections.abc</a>
+ &#8226;   <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#numbers">numbers</a>
+ &#8226;   <a href="#operator">operator</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2.defaults">jinja2.defaults</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.utils"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/utils.py" type="text/plain"><tt>jinja2.utils</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#collections">collections</a>
+ &#8226;   <a href="#collections.abc">collections.abc</a>
+ &#8226;   <a href="#enum">enum</a>
+ &#8226;   <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.constants">jinja2.constants</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.lexer">jinja2.lexer</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#json">json</a>
+ &#8226;   <a href="#markupsafe">markupsafe</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#pprint">pprint</a>
+ &#8226;   <a href="#random">random</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#threading">threading</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#typing_extensions">typing_extensions</a>
+ &#8226;   <a href="#urllib.parse">urllib.parse</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.async_utils">jinja2.async_utils</a>
+ &#8226;   <a href="#jinja2.compiler">jinja2.compiler</a>
+ &#8226;   <a href="#jinja2.debug">jinja2.debug</a>
+ &#8226;   <a href="#jinja2.defaults">jinja2.defaults</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.ext">jinja2.ext</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.lexer">jinja2.lexer</a>
+ &#8226;   <a href="#jinja2.loaders">jinja2.loaders</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.tests">jinja2.tests</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="jinja2.visitor"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/jinja2/visitor.py" type="text/plain"><tt>jinja2.visitor</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#typing_extensions">typing_extensions</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2.compiler">jinja2.compiler</a>
+ &#8226;   <a href="#jinja2.idtracking">jinja2.idtracking</a>
+ &#8226;   <a href="#jinja2.optimizer">jinja2.optimizer</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="json"></a>
+  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/json/__init__.py" type="text/plain"><tt>json</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#codecs">codecs</a>
+ &#8226;   <a href="#json.decoder">json.decoder</a>
+ &#8226;   <a href="#json.encoder">json.encoder</a>
+ &#8226;   <a href="#json.scanner">json.scanner</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#json.decoder">json.decoder</a>
+ &#8226;   <a href="#json.encoder">json.encoder</a>
+ &#8226;   <a href="#json.scanner">json.scanner</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="json.decoder"></a>
+  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/json/decoder.py" type="text/plain"><tt>json.decoder</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#_json">_json</a>
+ &#8226;   <a href="#json">json</a>
+ &#8226;   <a href="#json.scanner">json.scanner</a>
+ &#8226;   <a href="#re">re</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#_json">_json</a>
+ &#8226;   <a href="#json">json</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="json.encoder"></a>
+  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/json/encoder.py" type="text/plain"><tt>json.encoder</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#_json">_json</a>
+ &#8226;   <a href="#json">json</a>
+ &#8226;   <a href="#re">re</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#json">json</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="json.scanner"></a>
+  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/json/scanner.py" type="text/plain"><tt>json.scanner</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#_json">_json</a>
+ &#8226;   <a href="#json">json</a>
+ &#8226;   <a href="#re">re</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#json">json</a>
+ &#8226;   <a href="#json.decoder">json.decoder</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="keyword"></a>
   <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/keyword.py" type="text/plain"><tt>keyword</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imported by:
     <a href="#BufferCalculator.py">BufferCalculator.py</a>
  &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#jinja2.compiler">jinja2.compiler</a>
  &#8226;   <a href="#shiboken2">shiboken2</a>
 
   </div>
@@ -7934,11 +8898,13 @@ imported by:
  &#8226;   <a href="#concurrent.futures._base">concurrent.futures._base</a>
  &#8226;   <a href="#hashlib">hashlib</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
  &#8226;   <a href="#lib2to3.btm_matcher">lib2to3.btm_matcher</a>
  &#8226;   <a href="#lib2to3.pgen2.driver">lib2to3.pgen2.driver</a>
  &#8226;   <a href="#lib2to3.refactor">lib2to3.refactor</a>
  &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
  &#8226;   <a href="#qdarkstyle">qdarkstyle</a>
+ &#8226;   <a href="#qt_material">qt_material</a>
  &#8226;   <a href="#unittest._log">unittest._log</a>
 
   </div>
@@ -7969,10 +8935,78 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="markupsafe"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/markupsafe/__init__.py" type="text/plain"><tt>markupsafe</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#functools">functools</a>
+ &#8226;   <a href="#html">html</a>
+ &#8226;   <a href="#markupsafe">markupsafe</a>
+ &#8226;   <a href="#markupsafe._native">markupsafe._native</a>
+ &#8226;   <a href="#markupsafe._speedups">markupsafe._speedups</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#string">string</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#typing_extensions">typing_extensions</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#jinja2.compiler">jinja2.compiler</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.ext">jinja2.ext</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.sandbox">jinja2.sandbox</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#markupsafe">markupsafe</a>
+ &#8226;   <a href="#markupsafe._native">markupsafe._native</a>
+ &#8226;   <a href="#markupsafe._speedups">markupsafe._speedups</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="markupsafe._native"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/markupsafe/_native.py" type="text/plain"><tt>markupsafe._native</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#markupsafe">markupsafe</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#markupsafe">markupsafe</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="markupsafe._speedups"></a>
+  <tt>markupsafe._speedups</tt> <span class="moduletype"><tt>C:\Users\cmedders\buffcalc\env\lib\site-packages\markupsafe\_speedups.cp39-win_amd64.pyd</tt></span>  <div class="import">
+imports:
+    <a href="#markupsafe">markupsafe</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#markupsafe">markupsafe</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="marshal"></a>
   <tt>marshal</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
     <a href="#importlib._bootstrap_external">importlib._bootstrap_external</a>
+ &#8226;   <a href="#jinja2.bccache">jinja2.bccache</a>
  &#8226;   <a href="#pkgutil">pkgutil</a>
  &#8226;   <a href="#shiboken2">shiboken2</a>
  &#8226;   <a href="#zipimport">zipimport</a>
@@ -7989,6 +9023,7 @@ imported by:
  &#8226;   <a href="#asyncio.windows_events">asyncio.windows_events</a>
  &#8226;   <a href="#datetime">datetime</a>
  &#8226;   <a href="#fractions">fractions</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
  &#8226;   <a href="#random">random</a>
  &#8226;   <a href="#selectors">selectors</a>
  &#8226;   <a href="#statistics">statistics</a>
@@ -8955,6 +9990,7 @@ imports:
 imported by:
     <a href="#_pydecimal">_pydecimal</a>
  &#8226;   <a href="#fractions">fractions</a>
+ &#8226;   <a href="#jinja2.tests">jinja2.tests</a>
  &#8226;   <a href="#statistics">statistics</a>
 
   </div>
@@ -8995,6 +10031,9 @@ imported by:
  &#8226;   <a href="#fractions">fractions</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#jinja2.sandbox">jinja2.sandbox</a>
+ &#8226;   <a href="#jinja2.tests">jinja2.tests</a>
  &#8226;   <a href="#lib2to3.refactor">lib2to3.refactor</a>
  &#8226;   <a href="#pathlib">pathlib</a>
  &#8226;   <a href="#statistics">statistics</a>
@@ -9028,7 +10067,7 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>org</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#copy">copy</a>
+    <a href="#pickle">pickle</a>
 
   </div>
 
@@ -9096,6 +10135,10 @@ imported by:
  &#8226;   <a href="#http.server">http.server</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#jinja2.bccache">jinja2.bccache</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.loaders">jinja2.loaders</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
  &#8226;   <a href="#lib2to3.pgen2.driver">lib2to3.pgen2.driver</a>
  &#8226;   <a href="#lib2to3.pygram">lib2to3.pygram</a>
  &#8226;   <a href="#lib2to3.refactor">lib2to3.refactor</a>
@@ -9134,9 +10177,13 @@ imported by:
  &#8226;   <a href="#posixpath">posixpath</a>
  &#8226;   <a href="#py_compile">py_compile</a>
  &#8226;   <a href="#pydoc">pydoc</a>
+ &#8226;   <a href="#pyi_rth_inspect.py">pyi_rth_inspect.py</a>
  &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
+ &#8226;   <a href="#pyi_rth_pkgutil.py">pyi_rth_pkgutil.py</a>
  &#8226;   <a href="#pyi_rth_pyside2.py">pyi_rth_pyside2.py</a>
  &#8226;   <a href="#qdarkstyle">qdarkstyle</a>
+ &#8226;   <a href="#qt_material">qt_material</a>
+ &#8226;   <a href="#qt_material.resources.generate">qt_material.resources.generate</a>
  &#8226;   <a href="#qtpy">qtpy</a>
  &#8226;   <a href="#qtpy.py3compat">qtpy.py3compat</a>
  &#8226;   <a href="#random">random</a>
@@ -9194,6 +10241,8 @@ imports:
   <div class="import">
 imported by:
     <a href="#importlib.metadata">importlib.metadata</a>
+ &#8226;   <a href="#qt_material">qt_material</a>
+ &#8226;   <a href="#qt_material.resources.generate">qt_material.resources.generate</a>
  &#8226;   <a href="#zipimport">zipimport</a>
 
   </div>
@@ -9253,8 +10302,7 @@ imported by:
   <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/pickle.py" type="text/plain"><tt>pickle</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#'org.python'">'org.python'</a>
- &#8226;   <a href="#_compat_pickle">_compat_pickle</a>
+    <a href="#_compat_pickle">_compat_pickle</a>
  &#8226;   <a href="#_pickle">_pickle</a>
  &#8226;   <a href="#codecs">codecs</a>
  &#8226;   <a href="#copyreg">copyreg</a>
@@ -9262,6 +10310,7 @@ imports:
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#io">io</a>
  &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#org">org</a>
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#struct">struct</a>
@@ -9271,7 +10320,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#lib2to3.pgen2.grammar">lib2to3.pgen2.grammar</a>
+    <a href="#jinja2.bccache">jinja2.bccache</a>
+ &#8226;   <a href="#lib2to3.pgen2.grammar">lib2to3.pgen2.grammar</a>
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
  &#8226;   <a href="#qtpy.py3compat">qtpy.py3compat</a>
@@ -9307,6 +10357,7 @@ imported by:
     <a href="#lib2to3.pgen2.driver">lib2to3.pgen2.driver</a>
  &#8226;   <a href="#lib2to3.refactor">lib2to3.refactor</a>
  &#8226;   <a href="#pydoc">pydoc</a>
+ &#8226;   <a href="#pyi_rth_pkgutil.py">pyi_rth_pkgutil.py</a>
  &#8226;   <a href="#runpy">runpy</a>
 
   </div>
@@ -9337,7 +10388,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#pydoc">pydoc</a>
+    <a href="#jinja2.debug">jinja2.debug</a>
+ &#8226;   <a href="#pydoc">pydoc</a>
  &#8226;   <a href="#qdarkstyle">qdarkstyle</a>
  &#8226;   <a href="#qtpy">qtpy</a>
  &#8226;   <a href="#test.support">test.support</a>
@@ -9432,7 +10484,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#lib2to3.pgen2.grammar">lib2to3.pgen2.grammar</a>
+    <a href="#jinja2.ext">jinja2.ext</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#lib2to3.pgen2.grammar">lib2to3.pgen2.grammar</a>
  &#8226;   <a href="#pdb">pdb</a>
  &#8226;   <a href="#pickle">pickle</a>
  &#8226;   <a href="#sysconfig">sysconfig</a>
@@ -9572,8 +10626,19 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="pyimod03_importers"></a>
+  <a target="code" href="" type="text/plain"><tt>pyimod03_importers</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#pyi_rth_pkgutil.py">pyi_rth_pkgutil.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="qdarkstyle"></a>
-  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/site-packages/qdarkstyle/__init__.py" type="text/plain"><tt>qdarkstyle</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qdarkstyle/__init__.py" type="text/plain"><tt>qdarkstyle</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
 imports:
     <a href="#logging">logging</a>
@@ -9607,7 +10672,7 @@ imported by:
 
 <div class="node">
   <a name="qdarkstyle.colorsystem"></a>
-  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/site-packages/qdarkstyle/colorsystem.py" type="text/plain"><tt>qdarkstyle.colorsystem</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qdarkstyle/colorsystem.py" type="text/plain"><tt>qdarkstyle.colorsystem</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#qdarkstyle">qdarkstyle</a>
@@ -9624,7 +10689,7 @@ imported by:
 
 <div class="node">
   <a name="qdarkstyle.dark"></a>
-  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/site-packages/qdarkstyle/dark/__init__.py" type="text/plain"><tt>qdarkstyle.dark</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qdarkstyle/dark/__init__.py" type="text/plain"><tt>qdarkstyle.dark</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
 imports:
     <a href="#qdarkstyle">qdarkstyle</a>
@@ -9643,7 +10708,7 @@ imported by:
 
 <div class="node">
   <a name="qdarkstyle.dark.palette"></a>
-  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/site-packages/qdarkstyle/dark/palette.py" type="text/plain"><tt>qdarkstyle.dark.palette</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qdarkstyle/dark/palette.py" type="text/plain"><tt>qdarkstyle.dark.palette</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#qdarkstyle.colorsystem">qdarkstyle.colorsystem</a>
@@ -9661,7 +10726,7 @@ imported by:
 
 <div class="node">
   <a name="qdarkstyle.dark.style_rc"></a>
-  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/site-packages/qdarkstyle/dark/style_rc.py" type="text/plain"><tt>qdarkstyle.dark.style_rc</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qdarkstyle/dark/style_rc.py" type="text/plain"><tt>qdarkstyle.dark.style_rc</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#qdarkstyle.dark">qdarkstyle.dark</a>
@@ -9680,7 +10745,7 @@ imported by:
 
 <div class="node">
   <a name="qdarkstyle.light"></a>
-  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/site-packages/qdarkstyle/light/__init__.py" type="text/plain"><tt>qdarkstyle.light</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qdarkstyle/light/__init__.py" type="text/plain"><tt>qdarkstyle.light</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
 imports:
     <a href="#qdarkstyle">qdarkstyle</a>
@@ -9699,7 +10764,7 @@ imported by:
 
 <div class="node">
   <a name="qdarkstyle.light.palette"></a>
-  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/site-packages/qdarkstyle/light/palette.py" type="text/plain"><tt>qdarkstyle.light.palette</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qdarkstyle/light/palette.py" type="text/plain"><tt>qdarkstyle.light.palette</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#qdarkstyle.colorsystem">qdarkstyle.colorsystem</a>
@@ -9717,7 +10782,7 @@ imported by:
 
 <div class="node">
   <a name="qdarkstyle.light.style_rc"></a>
-  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/site-packages/qdarkstyle/light/style_rc.py" type="text/plain"><tt>qdarkstyle.light.style_rc</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qdarkstyle/light/style_rc.py" type="text/plain"><tt>qdarkstyle.light.style_rc</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#qdarkstyle.light">qdarkstyle.light</a>
@@ -9736,7 +10801,7 @@ imported by:
 
 <div class="node">
   <a name="qdarkstyle.palette"></a>
-  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/site-packages/qdarkstyle/palette.py" type="text/plain"><tt>qdarkstyle.palette</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qdarkstyle/palette.py" type="text/plain"><tt>qdarkstyle.palette</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#collections">collections</a>
@@ -9755,10 +10820,73 @@ imported by:
 
 <div class="node">
   <a name="qt_material"></a>
-  <a target="code" href="" type="text/plain"><tt>qt_material</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qt_material/__init__.py" type="text/plain"><tt>qt_material</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#'PyQt5.QtCore'">'PyQt5.QtCore'</a>
+ &#8226;   <a href="#'PyQt5.QtGui'">'PyQt5.QtGui'</a>
+ &#8226;   <a href="#'PyQt5.QtWidgets'">'PyQt5.QtWidgets'</a>
+ &#8226;   <a href="#'PySide6.QtCore'">'PySide6.QtCore'</a>
+ &#8226;   <a href="#'PySide6.QtUiTools'">'PySide6.QtUiTools'</a>
+ &#8226;   <a href="#'PySide6.QtWidgets'">'PySide6.QtWidgets'</a>
+ &#8226;   <a href="#PyQt5">PyQt5</a>
+ &#8226;   <a href="#PySide2.QtCore">PySide2.QtCore</a>
+ &#8226;   <a href="#PySide2.QtGui">PySide2.QtGui</a>
+ &#8226;   <a href="#PySide2.QtUiTools">PySide2.QtUiTools</a>
+ &#8226;   <a href="#PySide2.QtWidgets">PySide2.QtWidgets</a>
+ &#8226;   <a href="#PySide6">PySide6</a>
+ &#8226;   <a href="#base64">base64</a>
+ &#8226;   <a href="#jinja2">jinja2</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#qt_material.resources">qt_material.resources</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#xml.etree">xml.etree</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
+
+  </div>
+  <div class="import">
 imported by:
     <a href="#BufferCalculator.py">BufferCalculator.py</a>
+ &#8226;   <a href="#qt_material.resources">qt_material.resources</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="qt_material.resources"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qt_material/resources/__init__.py" type="text/plain"><tt>qt_material.resources</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#qt_material">qt_material</a>
+ &#8226;   <a href="#qt_material.resources.generate">qt_material.resources.generate</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#qt_material">qt_material</a>
+ &#8226;   <a href="#qt_material.resources.generate">qt_material.resources.generate</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="qt_material.resources.generate"></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qt_material/resources/generate.py" type="text/plain"><tt>qt_material.resources.generate</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#os">os</a>
+ &#8226;   <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#qt_material.resources">qt_material.resources</a>
+ &#8226;   <a href="#shutil">shutil</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#qt_material.resources">qt_material.resources</a>
 
   </div>
 
@@ -9766,7 +10894,7 @@ imported by:
 
 <div class="node">
   <a name="qtpy"></a>
-  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/site-packages/qtpy/__init__.py" type="text/plain"><tt>qtpy</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qtpy/__init__.py" type="text/plain"><tt>qtpy</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
 imports:
     <a href="#'PyQt4.Qt'">'PyQt4.Qt'</a>
@@ -9808,7 +10936,7 @@ imported by:
 
 <div class="node">
   <a name="qtpy.QtCore"></a>
-  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/site-packages/qtpy/QtCore.py" type="text/plain"><tt>qtpy.QtCore</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qtpy/QtCore.py" type="text/plain"><tt>qtpy.QtCore</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#'PyQt4.QtCore'">'PyQt4.QtCore'</a>
@@ -9833,7 +10961,7 @@ imported by:
 
 <div class="node">
   <a name="qtpy.QtDataVisualization"></a>
-  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/site-packages/qtpy/QtDataVisualization.py" type="text/plain"><tt>qtpy.QtDataVisualization</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qtpy/QtDataVisualization.py" type="text/plain"><tt>qtpy.QtDataVisualization</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#'PyQt5.QtDataVisualization'">'PyQt5.QtDataVisualization'</a>
@@ -9852,7 +10980,7 @@ imported by:
 
 <div class="node">
   <a name="qtpy.QtGui"></a>
-  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/site-packages/qtpy/QtGui.py" type="text/plain"><tt>qtpy.QtGui</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qtpy/QtGui.py" type="text/plain"><tt>qtpy.QtGui</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#'PyQt4.Qt'">'PyQt4.Qt'</a>
@@ -9874,7 +11002,7 @@ imported by:
 
 <div class="node">
   <a name="qtpy._version"></a>
-  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/site-packages/qtpy/_version.py" type="text/plain"><tt>qtpy._version</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qtpy/_version.py" type="text/plain"><tt>qtpy._version</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#qtpy">qtpy</a>
@@ -9890,7 +11018,7 @@ imported by:
 
 <div class="node">
   <a name="qtpy.py3compat"></a>
-  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/site-packages/qtpy/py3compat.py" type="text/plain"><tt>qtpy.py3compat</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/qtpy/py3compat.py" type="text/plain"><tt>qtpy.py3compat</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#CStringIO">CStringIO</a>
@@ -10000,6 +11128,8 @@ imports:
 imported by:
     <a href="#email.generator">email.generator</a>
  &#8226;   <a href="#email.utils">email.utils</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
  &#8226;   <a href="#secrets">secrets</a>
  &#8226;   <a href="#statistics">statistics</a>
  &#8226;   <a href="#tempfile">tempfile</a>
@@ -10066,10 +11196,19 @@ imported by:
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#jinja2._identifier">jinja2._identifier</a>
+ &#8226;   <a href="#jinja2.ext">jinja2.ext</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.lexer">jinja2.lexer</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#json.decoder">json.decoder</a>
+ &#8226;   <a href="#json.encoder">json.encoder</a>
+ &#8226;   <a href="#json.scanner">json.scanner</a>
  &#8226;   <a href="#lib2to3.pgen2.literals">lib2to3.pgen2.literals</a>
  &#8226;   <a href="#lib2to3.pgen2.tokenize">lib2to3.pgen2.tokenize</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#markupsafe">markupsafe</a>
  &#8226;   <a href="#pathlib">pathlib</a>
  &#8226;   <a href="#pdb">pdb</a>
  &#8226;   <a href="#pickle">pickle</a>
@@ -10079,7 +11218,6 @@ imported by:
  &#8226;   <a href="#posixpath">posixpath</a>
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#pydoc">pydoc</a>
- &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
  &#8226;   <a href="#shiboken2">shiboken2</a>
  &#8226;   <a href="#shlex">shlex</a>
  &#8226;   <a href="#string">string</a>
@@ -10248,7 +11386,7 @@ imported by:
 
 <div class="node">
   <a name="shiboken2"></a>
-  <a target="code" href="///C:/users/cmedders/appdata/local/programs/python/python39/lib/site-packages/shiboken2/__init__.py" type="text/plain"><tt>shiboken2</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/env/lib/site-packages/shiboken2/__init__.py" type="text/plain"><tt>shiboken2</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
 imports:
     <a href="#base64">base64</a>
@@ -10281,7 +11419,7 @@ imported by:
 
 <div class="node">
   <a name="shiboken2.shiboken2"></a>
-  <tt>shiboken2.shiboken2</tt> <span class="moduletype"><tt>c:\users\cmedders\appdata\local\programs\python\python39\lib\site-packages\shiboken2\shiboken2.pyd</tt></span>  <div class="import">
+  <tt>shiboken2.shiboken2</tt> <span class="moduletype"><tt>C:\Users\cmedders\buffcalc\env\lib\site-packages\shiboken2\shiboken2.pyd</tt></span>  <div class="import">
 imports:
     <a href="#shiboken2">shiboken2</a>
 
@@ -10345,6 +11483,7 @@ imported by:
  &#8226;   <a href="#ctypes.util">ctypes.util</a>
  &#8226;   <a href="#http.server">http.server</a>
  &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
+ &#8226;   <a href="#qt_material.resources.generate">qt_material.resources.generate</a>
  &#8226;   <a href="#tarfile">tarfile</a>
  &#8226;   <a href="#tempfile">tempfile</a>
  &#8226;   <a href="#test.support">test.support</a>
@@ -10625,6 +11764,7 @@ imported by:
  &#8226;   <a href="#distutils.dep_util">distutils.dep_util</a>
  &#8226;   <a href="#distutils.file_util">distutils.file_util</a>
  &#8226;   <a href="#genericpath">genericpath</a>
+ &#8226;   <a href="#jinja2.bccache">jinja2.bccache</a>
  &#8226;   <a href="#netrc">netrc</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#os">os</a>
@@ -10682,8 +11822,10 @@ imported by:
  &#8226;   <a href="#email._encoded_words">email._encoded_words</a>
  &#8226;   <a href="#email._header_value_parser">email._header_value_parser</a>
  &#8226;   <a href="#email.quoprimime">email.quoprimime</a>
+ &#8226;   <a href="#jinja2.sandbox">jinja2.sandbox</a>
  &#8226;   <a href="#lib2to3.pgen2.tokenize">lib2to3.pgen2.tokenize</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#markupsafe">markupsafe</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#nturl2path">nturl2path</a>
  &#8226;   <a href="#qtpy.py3compat">qtpy.py3compat</a>
@@ -10861,6 +12003,12 @@ imported by:
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
  &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#jinja2.bccache">jinja2.bccache</a>
+ &#8226;   <a href="#jinja2.debug">jinja2.debug</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.lexer">jinja2.lexer</a>
+ &#8226;   <a href="#jinja2.loaders">jinja2.loaders</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
  &#8226;   <a href="#lib2to3.pgen2.driver">lib2to3.pgen2.driver</a>
  &#8226;   <a href="#lib2to3.pgen2.tokenize">lib2to3.pgen2.tokenize</a>
  &#8226;   <a href="#lib2to3.pytree">lib2to3.pytree</a>
@@ -10897,9 +12045,12 @@ imported by:
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#py_compile">py_compile</a>
  &#8226;   <a href="#pydoc">pydoc</a>
+ &#8226;   <a href="#pyi_rth_inspect.py">pyi_rth_inspect.py</a>
  &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
+ &#8226;   <a href="#pyi_rth_pkgutil.py">pyi_rth_pkgutil.py</a>
  &#8226;   <a href="#pyi_rth_pyside2.py">pyi_rth_pyside2.py</a>
  &#8226;   <a href="#qdarkstyle">qdarkstyle</a>
+ &#8226;   <a href="#qt_material">qt_material</a>
  &#8226;   <a href="#qtpy">qtpy</a>
  &#8226;   <a href="#qtpy.py3compat">qtpy.py3compat</a>
  &#8226;   <a href="#quopri">quopri</a>
@@ -11034,6 +12185,7 @@ imported by:
  &#8226;   <a href="#ctypes.util">ctypes.util</a>
  &#8226;   <a href="#distutils.ccompiler">distutils.ccompiler</a>
  &#8226;   <a href="#distutils.util">distutils.util</a>
+ &#8226;   <a href="#jinja2.bccache">jinja2.bccache</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
  &#8226;   <a href="#multiprocessing.heap">multiprocessing.heap</a>
  &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
@@ -11073,6 +12225,7 @@ imports:
 imported by:
     <a href="#PySide2">PySide2</a>
  &#8226;   <a href="#argparse">argparse</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
  &#8226;   <a href="#optparse">optparse</a>
  &#8226;   <a href="#pydoc">pydoc</a>
  &#8226;   <a href="#shiboken2">shiboken2</a>
@@ -11122,6 +12275,7 @@ imported by:
  &#8226;   <a href="#concurrent.futures.process">concurrent.futures.process</a>
  &#8226;   <a href="#concurrent.futures.thread">concurrent.futures.thread</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
  &#8226;   <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
@@ -11232,6 +12386,17 @@ imported by:
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#pdb">pdb</a>
  &#8226;   <a href="#pydoc">pydoc</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="tputil"></a>
+  <a target="code" href="" type="text/plain"><tt>tputil</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#jinja2.debug">jinja2.debug</a>
 
   </div>
 
@@ -11350,6 +12515,12 @@ imported by:
  &#8226;   <a href="#importlib">importlib</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
  &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#jinja2.bccache">jinja2.bccache</a>
+ &#8226;   <a href="#jinja2.debug">jinja2.debug</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.loaders">jinja2.loaders</a>
+ &#8226;   <a href="#jinja2.sandbox">jinja2.sandbox</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
  &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
  &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
  &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
@@ -11396,7 +12567,52 @@ imported by:
     <a href="#asyncio.staggered">asyncio.staggered</a>
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#importlib.abc">importlib.abc</a>
+ &#8226;   <a href="#jinja2.async_utils">jinja2.async_utils</a>
+ &#8226;   <a href="#jinja2.bccache">jinja2.bccache</a>
+ &#8226;   <a href="#jinja2.compiler">jinja2.compiler</a>
+ &#8226;   <a href="#jinja2.debug">jinja2.debug</a>
+ &#8226;   <a href="#jinja2.defaults">jinja2.defaults</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.exceptions">jinja2.exceptions</a>
+ &#8226;   <a href="#jinja2.ext">jinja2.ext</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.idtracking">jinja2.idtracking</a>
+ &#8226;   <a href="#jinja2.lexer">jinja2.lexer</a>
+ &#8226;   <a href="#jinja2.loaders">jinja2.loaders</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#jinja2.optimizer">jinja2.optimizer</a>
+ &#8226;   <a href="#jinja2.parser">jinja2.parser</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.sandbox">jinja2.sandbox</a>
+ &#8226;   <a href="#jinja2.tests">jinja2.tests</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#jinja2.visitor">jinja2.visitor</a>
+ &#8226;   <a href="#markupsafe">markupsafe</a>
+ &#8226;   <a href="#markupsafe._native">markupsafe._native</a>
  &#8226;   <a href="#shiboken2">shiboken2</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="typing_extensions"></a>
+  <a target="code" href="" type="text/plain"><tt>typing_extensions</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#jinja2.bccache">jinja2.bccache</a>
+ &#8226;   <a href="#jinja2.compiler">jinja2.compiler</a>
+ &#8226;   <a href="#jinja2.defaults">jinja2.defaults</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.ext">jinja2.ext</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.lexer">jinja2.lexer</a>
+ &#8226;   <a href="#jinja2.nodes">jinja2.nodes</a>
+ &#8226;   <a href="#jinja2.parser">jinja2.parser</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
+ &#8226;   <a href="#jinja2.visitor">jinja2.visitor</a>
+ &#8226;   <a href="#markupsafe">markupsafe</a>
 
   </div>
 
@@ -11415,7 +12631,7 @@ imported by:
 
 <div class="node">
   <a name="ui.calculator"></a>
-  <a target="code" href="///C:/Users/cmedders/buffcalc/ui/calculator.py" type="text/plain"><tt>ui.calculator</tt></a>
+  <a target="code" href="///C:/Users/cmedders/buffcalc/src/ui/calculator.py" type="text/plain"><tt>ui.calculator</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#PySide2.QtCore">PySide2.QtCore</a>
@@ -11766,6 +12982,7 @@ imported by:
  &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
  &#8226;   <a href="#mimetypes">mimetypes</a>
  &#8226;   <a href="#nturl2path">nturl2path</a>
  &#8226;   <a href="#pathlib">pathlib</a>
@@ -11926,9 +13143,14 @@ imported by:
  &#8226;   <a href="#importlib.abc">importlib.abc</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
  &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#jinja2.ext">jinja2.ext</a>
+ &#8226;   <a href="#jinja2.filters">jinja2.filters</a>
+ &#8226;   <a href="#jinja2.runtime">jinja2.runtime</a>
+ &#8226;   <a href="#jinja2.utils">jinja2.utils</a>
  &#8226;   <a href="#lib2to3">lib2to3</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#markupsafe._native">markupsafe._native</a>
  &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
  &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
  &#8226;   <a href="#multiprocessing.resource_tracker">multiprocessing.resource_tracker</a>
@@ -11987,6 +13209,8 @@ imported by:
  &#8226;   <a href="#concurrent.futures.thread">concurrent.futures.thread</a>
  &#8226;   <a href="#copy">copy</a>
  &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
+ &#8226;   <a href="#jinja2.loaders">jinja2.loaders</a>
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
  &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
@@ -12073,7 +13297,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#xml.etree">xml.etree</a>
+    <a href="#qt_material">qt_material</a>
+ &#8226;   <a href="#xml.etree">xml.etree</a>
  &#8226;   <a href="#xml.etree.ElementInclude">xml.etree.ElementInclude</a>
  &#8226;   <a href="#xml.etree.ElementPath">xml.etree.ElementPath</a>
  &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
@@ -12145,6 +13370,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#_elementtree">_elementtree</a>
+ &#8226;   <a href="#qt_material">qt_material</a>
  &#8226;   <a href="#test.support.testresult">test.support.testresult</a>
  &#8226;   <a href="#xml.etree">xml.etree</a>
  &#8226;   <a href="#xml.etree.ElementInclude">xml.etree.ElementInclude</a>
@@ -12423,6 +13649,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#importlib.metadata">importlib.metadata</a>
+ &#8226;   <a href="#jinja2.environment">jinja2.environment</a>
  &#8226;   <a href="#shiboken2">shiboken2</a>
  &#8226;   <a href="#shutil">shutil</a>
 
@@ -12451,7 +13678,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#pkgutil">pkgutil</a>
+    <a href="#jinja2.loaders">jinja2.loaders</a>
+ &#8226;   <a href="#pkgutil">pkgutil</a>
 
   </div>
 
