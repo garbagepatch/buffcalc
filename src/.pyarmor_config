@@ -1,14 +1,14 @@
 {
   "version": "2.0",
-  "name": "buffcalc",
-  "title": "buffcalc",
+  "name": "src",
+  "title": "src",
   "src": ".",
   "is_package": null,
-  "manifest": "include *.py, include *.db, prune dist, include data/*.py, include ui/*.py,  prune test, prune env, include ui, include data",
-  "entry": "BufferCalculator.py",
+  "manifest": "include *.py, prune obfdist, prune Main_extracted, prune dist, prune build, include Buffers.db, include ui/*.py, include data/*.py",
+  "entry": "Main.py",
   "output": "dist",
   "runtime_path": null,
-  "restrict_mode": 0,
+  "restrict_mode": 1,
   "obf_code": 1,
   "obf_mod": 2,
   "wrap_mode": 1,
@@ -19,6 +19,6 @@
   "platform": null,
   "package_runtime": 1,
   "enable_suffix": 0,
-  "license_file": "outer",
-  "build_time": 1636992806.9707978
+  "license_file": null,
+  "build_time": 1637611930.6873944
 }

@@ -5,7 +5,7 @@
 #define MyAppVersion "1.5"
 #define MyAppPublisher "Cross Medders"
 #define MyAppURL "http://veridiansea.xyz"
-#define MyAppExeName "BufferCalculator_obf.exe"
+#define MyAppExeName "BufferCalculator.exe"
 #define MyAppAssocName MyAppName + " File"
 #define MyAppAssocExt ".myp"
 #define MyAppAssocKey StringChange(MyAppAssocName, " ", "") + MyAppAssocExt
@@ -28,7 +28,7 @@ DisableProgramGroupPage=yes
 ;PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
 OutputBaseFilename=BufferCalcSetup
-SetupIconFile=C:\Users\cmedders\buffcalc\iso255.ico
+SetupIconFile=C:\Users\cmedders\buffcalc\src\iso255.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
@@ -40,8 +40,8 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\cmedders\buffcalc\dist\BufferCalculator\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\cmedders\buffcalc\dist\BufferCalculator\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\cmedders\buffcalc\src\dist\BufferCalculator\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\cmedders\buffcalc\src\dist\BufferCalculator\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]

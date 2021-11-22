@@ -1,0 +1,156 @@
+from PySide2.QtSql import QSqlTableModel
+from PySide2.QtWidgets import QApplication, QWidget, QTableView, QAbstractItemView, QVBoxLayout, QTabWidget
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtSql import *
+from PySide2.QtWidgets import QWidget
+import qdarkstyle
+from ui.calculator import Ui_MainWindow
+from data.connection import createBufferList, createHAList, createAList
+from data.connection import sqlite3con
+from PySide2 import QtWidgets, QtCore, QtGui
+from qt_material import apply_stylesheet
+
+"""import pyqtgraph.opengl as gl"""
+from PySide2.QtGui import QIcon, QImage, QPixmap
+from PySide2.QtWidgets import  QMainWindow, QAction, QMessageBox
+from math import log10
+from BufferCalculator import BufferCalculator
+from datetime import date
+from repairbuffer import RepairBuffer
+"""from opensimplex import OpenSimplex"""
+import sys
+from data.connection import createConnection
+class  Main(QMainWindow, Ui_MainWindow):
+    def __init__(self):
+        super(Main, self).__init__()
+        self.setupUi(self)
+        sys.stdout = self
+        self.createMenu()
+        self.setWindowTitle("Sup")
+        self.connection = sqlite3con()
+        self.calc = BufferCalculator()
+        self.repair = RepairBuffer()
+        self.tabWidget.removeTab(0)
+        self.tabWidget.removeTab(0)
+        self.tabWidget.addTab(self.calc, "Buffer Calculator")
+        self.tabWidget.addTab(self.repair, "Recipe Repair")
+        
+
+    def exit_app(self):
+        self.close()
+    
+    def createMenu(self):
+        mainMenu = self.menuBar()
+        fileMenu = mainMenu.addMenu('File')
+        
+        editMenu = mainMenu.addMenu('Edit')
+        fontMenu = mainMenu.addMenu('Font')
+        helpMenu = mainMenu.addMenu('Help')
+ 
+ 
+        openAction = QAction(QIcon('open.png'), "Open", self)
+        openAction.setShortcut('Ctrl+O')
+ 
+ 
+        saveAction = QAction(QIcon('save.png'), "Save", self)
+        saveAction.setShortcut('Ctrl+S')
+ 
+        exitAction = QAction(QIcon('exit.png'), "Exit", self)
+        exitAction.setShortcut('Ctrl+X')
+        editAction = QAction(QIcon('save.png'), "edit", self)
+        editAction.setShortcut('Ctrl+R')
+ 
+ 
+        editAction.triggered.connect(self.editstuff)
+        exitAction.triggered.connect(self.exit_app)
+        
+
+ 
+
+        fileMenu.addAction(openAction)
+        fileMenu.addAction(saveAction)
+       
+        fileMenu.addAction(exitAction)
+        editMenu.addAction(editAction)
+    def editstuff(self):
+        self.editthings = RepairBuffer()
+        self.editthings.show()
+def protect_pytransform():
+
+    import pytransform as pytransform
+
+    def assert_builtin(func):
+        type = ''.__class__.__class__
+        builtin_function = type(''.join)
+        if type(func) is not builtin_function:
+            raise RuntimeError('%s() is not a builtin' % func.__name__)
+
+    def check_obfuscated_script():
+        CO_SIZES = 55, 52, 49, 46, 42, 40, 38, 36
+        CO_NAMES = set(['pytransform', 'pyarmor_runtime',
+                        '__pyarmor__', '__name__', '__file__'])
+        co = pytransform.sys._getframe(3).f_code
+        if not ((set(co.co_names) <= CO_NAMES)
+                and (len(co.co_code) in CO_SIZES)):
+            raise RuntimeError('unexpected obfuscated script')
+
+    def check_mod_pytransform():
+        def _check_co_key(co, v):
+            return (len(co.co_names), len(co.co_consts), len(co.co_code)) == v
+        for k, (v1, v2, v3) in [('dllmethod', ((0, 3, 16), (0, 1, 14), None)), ('init_pytransform', ((0, 1, 14), None, None)), ('init_runtime', ((0, 1, 14), None, None)), ('_load_library', ((33, 22, 700), None, None)), ('get_registration_code', ((0, 1, 14), None, None)), ('get_expired_days', ((0, 1, 14), None, None)), ('get_hd_info', ((12, 10, 124), None, None)), ('get_license_info', ((11, 24, 398), None, None)), ('get_license_code', ((1, 2, 10), None, None)), ('format_platform', ((18, 18, 284), None, None)), ('pyarmor_init', ((3, 1, 22), None, None)), ('pyarmor_runtime', ((12, 5, 130), None, None)), ('_match_features', ((1, 2, 30), None, None))]:
+            co = getattr(pytransform, k).__code__
+            if not _check_co_key(co, v1):
+                raise RuntimeError('unexpected pytransform.py')
+            if v2:
+                if not _check_co_key(co.co_consts[1], v2):
+                    raise RuntimeError('unexpected pytransform.py')
+            if v3:
+                if not _check_co_key(co.__closure__[0].cell_contents.__code__, v3):
+                    raise RuntimeError('unexpected pytransform.py')
+
+    def check_lib_pytransform():
+        platname = pytransform.sys.platform
+        libname = '_pytransform.dylib' if platname.startswith('darwin') else \
+                  '_pytransform.dll' if platname.startswith('win') else \
+                  '_pytransform.dll' if platname.startswith('cygwin') else \
+                  '_pytransform.so'
+        if getattr(pytransform.sys, 'frozen', False):
+            filename = pytransform.os.path.join(pytransform.sys._MEIPASS, libname)
+        else:
+            filename = pytransform.os.path.join(pytransform.os.path.dirname(pytransform.__file__), '', libname)
+
+        with open(filename, 'rb') as f:
+            buf = bytearray(f.read())
+        value = sum(buf)
+        if getattr(pytransform.sys, 'frozen', False) and sys.platform == 'darwin':
+            if '':
+                value += 886 - sum(b'') + 299
+            else:
+                value += 1217
+
+        if value not in [120229471]:
+            raise RuntimeError('unexpected %s' % filename)
+
+    assert_builtin(sum)
+    assert_builtin(open)
+    assert_builtin(len)
+
+    check_obfuscated_script()
+    check_mod_pytransform()
+    check_lib_pytransform()
+
+
+protect_pytransform()
+if __name__ == '__main__':
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    createConnection()
+    app.setStyle('Fusion')
+    apply_stylesheet(app, theme='dark_amber.xml')
+    main = Main()
+
+    main.show()
+    """main.animation()"""
+    sys.exit(app.exec_())
+    

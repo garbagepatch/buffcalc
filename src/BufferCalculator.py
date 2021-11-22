@@ -5,11 +5,11 @@ from PySide2.QtGui import *
 from PySide2.QtSql import *
 from PySide2.QtWidgets import QWidget
 import qdarkstyle
-from ui.calculator import Ui_MainWindow
+from ui.calcwidget import Ui_Form
 from data.connection import createBufferList, createHAList, createAList
 from data.connection import sqlite3con
 from PySide2 import QtWidgets, QtCore, QtGui
-
+from repairbuffer import RepairBuffer
 """import pyqtgraph.opengl as gl"""
 from PySide2.QtGui import QIcon, QImage, QPixmap
 from PySide2.QtWidgets import  QMainWindow, QAction, QMessageBox
@@ -18,20 +18,20 @@ from datetime import date
 """from opensimplex import OpenSimplex"""
 import sys
 from data.connection import createConnection
-class  BufferCalculator(QMainWindow, Ui_MainWindow):
+class  BufferCalculator(QWidget, Ui_Form):
     def __init__(self):
         super(BufferCalculator, self).__init__()
         self.setupUi(self)
         sys.stdout = self
         self.bufferId = 0
-        self.createMenu()
+        
         self.Calculate.clicked.connect(self.DoCalculation)
         self.totalBufferMolarityLineEdit.setText('0.00')
         self.targetPHLineEdit.setText('7.00')
         self.sodiumChlorideMolarityLineEdit.setText('0.00')
         self.titrantEdit.setMaxLength(6)
         self.bufferEdit.setMaxLength(6)
-        self.setWindowTitle("Sup")
+     
         self.pH = 0.0
         self.cond = 0.0
         self.delRow = -1
@@ -48,6 +48,7 @@ class  BufferCalculator(QMainWindow, Ui_MainWindow):
         self.hasmw = 0.0
         self.asmw = 0.0
         self.aMol = 0.0
+     
         self.pKa = 0.0
         self.comboBox.currentTextChanged.connect(self.titrateCalculate())
 
@@ -73,8 +74,7 @@ class  BufferCalculator(QMainWindow, Ui_MainWindow):
             
         self.haChoiceCombo.addItems(has)
         self.haChoiceCombo.setCurrentText(has[0])
-    def exit_app(self):
-        self.close()
+
     def DoCalculation(self):
         self.totMol = float(self.totalBufferMolarityLineEdit.text())
         self.naclMol = float(self.sodiumChlorideMolarityLineEdit.text())
@@ -149,48 +149,4 @@ class  BufferCalculator(QMainWindow, Ui_MainWindow):
             self.conductivityMSCmLineEdit.setText(str(66700*((6*HA_1/mwa[0] + 2*self.naclMol +2*HA/mwha[0])/2)**(0.991)/1000))
         if(self.bufferId==3):
             self.conductivityMSCmLineEdit.setText(str(66700*(((2*HA/157.6+2*self.naclMol)/2)**(0.911))/1000)) 
-    def createMenu(self):
-        mainMenu = self.menuBar()
-        fileMenu = mainMenu.addMenu('File')
-        
-        editMenu = mainMenu.addMenu('Edit')
-        fontMenu = mainMenu.addMenu('Font')
-        helpMenu = mainMenu.addMenu('Help')
- 
- 
-        openAction = QAction(QIcon('open.png'), "Open", self)
-        openAction.setShortcut('Ctrl+O')
- 
- 
-        saveAction = QAction(QIcon('save.png'), "Save", self)
-        saveAction.setShortcut('Ctrl+S')
- 
-        exitAction = QAction(QIcon('exit.png'), "Exit", self)
-        exitAction.setShortcut('Ctrl+X')
-        editAction = QAction(QIcon('save.png'), "edit", self)
-        editAction.setShortcut('Ctrl+R')
- 
- 
- 
-        exitAction.triggered.connect(self.exit_app)
- 
-
- 
-
-        fileMenu.addAction(openAction)
-        fileMenu.addAction(saveAction)
-       
-        fileMenu.addAction(exitAction)
-        editMenu.addAction(editAction)
-if __name__ == '__main__':
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    createConnection()
-    app.setStyle('Fusion')
-    apply_stylesheet(app, theme='dark_amber.xml')
-    main = BufferCalculator()
-
-    main.show()
-    """main.animation()"""
-    sys.exit(app.exec_())
-    
+  
