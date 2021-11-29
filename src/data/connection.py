@@ -1,6 +1,9 @@
 from PySide2 import QtSql, QtGui
 import sqlite3
 import re
+import os
+import sys
+from os import path
 from PySide2.QtCore import QFile
 from PySide2.QtWidgets import QMessageBox, QApplication
 def createConnection():
@@ -18,16 +21,17 @@ def createConnection():
     return True
 def sqlite3con():
     try:
-        con = sqlite3.connect("../Buffers.db")
+        con = sqlite3.connect("Buffers.db")
     except Exception as e:
         print(e)
-        sqlfile = open(".sql")
+        """sqlfile = open(".sql")
         sqlfilestr = sqlfile.read()
-        sqlite3.Cursor.executescript(sqlfilestr)
-        con = sqlite3.connect("Buffers.db")
-
-
+        sqlite3.Cursor.executescript(sqlfilestr)"""
+        basis = sys.argv[0]
+        required_folder = os.path.split(basis)[0]
+        con = sqlite3.connect(os.path.join(required_folder, "Buffers.db"))
     return con
+    
 def createBufferList(con):
     cur = con.cursor()
     buffers = []
